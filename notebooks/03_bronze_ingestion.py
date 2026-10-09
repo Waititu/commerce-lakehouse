@@ -34,9 +34,9 @@ print("Do not upload files containing real customer or payment information.")
 # This cell validates all inputs before replacing any existing Bronze table.
 # Re-running it replaces each table with the current complete source snapshot.
 
-from uuid import uuid4  # noqa: E402
+from uuid import uuid4
 
-from pyspark.sql import functions as F  # noqa: E402
+from pyspark.sql import functions as F
 
 EXPECTED_ROWS = {
     "customers": 1_000,
